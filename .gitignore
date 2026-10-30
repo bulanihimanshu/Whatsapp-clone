@@ -1,0 +1,67 @@
+# Android Studio and local editor state
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.fleet/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+*.swo
+
+# Gradle, Kotlin, native builds, and generated artifacts
+.gradle/
+.kotlin/
+build/
+out/
+captures/
+.externalNativeBuild/
+.cxx/
+*.class
+*.dex
+*.apk
+*.aab
+*.ap_
+*.hprof
+*.log
+
+# Machine-specific SDK and signing configuration
+local.properties
+key.properties
+keystore.properties
+signing.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Firebase client configuration and local emulator state
+google-services.json
+google-services-*.json
+.firebase/
+firebase-debug.log*
+database-debug.log*
+ui-debug.log*
+
+# Environment files and private credentials (including common variants)
+.env
+.env.*
+*.env
+!.env.example
+!.env.template
+*service-account*.json
+*service_account*.json
+*serviceAccount*.json
+*firebase-adminsdk*.json
+credentials.json
+secrets.properties
+secrets.xml
+.aws/
+.ssh/
+
+# Keep Gradle wrapper scripts, properties, and wrapper JAR in version control.

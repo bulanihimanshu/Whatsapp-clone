@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary" android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp">
+            <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal" />
+            <TextView android:id="@+id/textState" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:padding="16dp" android:gravity="center"
+                android:accessibilityLiveRegion="polite" android:visibility="gone" />
+            <Button android:id="@+id/buttonRetry" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+                android:text="@string/retry" android:visibility="gone" />
+            <LinearLayout android:id="@+id/profileContent" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+                <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/imageProfile"
+                    android:layout_width="96dp" android:layout_height="96dp" android:layout_gravity="center_horizontal"
+                    android:src="@drawable/default_profile" android:contentDescription="@string/profile_photo" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp" android:text="@string/name" android:labelFor="@id/textName" />
+                <TextView android:id="@+id/textName" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textSize="20sp" android:textIsSelectable="true" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" android:text="@string/email" android:labelFor="@id/textEmail" />
+                <TextView android:id="@+id/textEmail" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textSize="18sp" android:textIsSelectable="true" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" android:text="@string/phone" android:labelFor="@id/textPhone" />
+                <TextView android:id="@+id/textPhone" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textSize="18sp" android:textIsSelectable="true" />
+            </LinearLayout>
+            <Button android:id="@+id/buttonLogout" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/logout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

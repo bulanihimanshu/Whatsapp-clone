@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar" android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_margin="16dp" />
+    <TextView android:id="@+id/textState" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="24dp" android:gravity="center"
+        android:accessibilityLiveRegion="polite" android:visibility="gone" />
+    <Button android:id="@+id/buttonRetry" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+        android:text="@string/retry" android:visibility="gone" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerViewContacts"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+</LinearLayout>
